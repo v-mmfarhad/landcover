@@ -1,5 +1,7 @@
 # Land cover mapping project
 
+Ukhe
+
 This repository holds both the _frontend_ web-application and _backend_ server that make up our "Land Cover Mapping" tool.
 
 
