@@ -77,6 +77,32 @@ var addInferenceWindowSizeSlider = function(){
 };
 
 
+var addTimelineSlider = function(){
+    var timelineSlider = L.control.slider(
+        function(value){
+            TIMELINE = value;
+        }, {
+            position: 'bottomleft',
+            id: 'timelineSlider',
+            orientation: 'vertical',
+            collapsed: true,
+            syncSlider: true,
+            min: 1980,
+            max: 2020,
+            value: TIMELINE,
+            logo: "Timeline",
+            size: "171px"
+        }
+    );
+    timelineSlider.addTo(gMap);
+    return timelineSlider;
+};
+
+
+
+
+
+
 var addCorrectionWindowSizeSlider = function(){
     var correctionWindowSizeSlider = L.control.slider(
         function(value){
